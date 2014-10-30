@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autos> 
+	<auto id="1">
+		<marke> audi</marke> 
+		<farbe> blau</farbe>
+		<ps> 100 </ps> 
+		 <bauteile>
+		 	<bauteil></bauteil>
+		 </bauteile>
+	</auto> 
+	<auto id="2">
+		<marke> bmw </marke> 
+		<farbe> schwarz </farbe> 
+		<ps> 120 </ps> 
+		
+	</auto>
+</autos> 
+ 
