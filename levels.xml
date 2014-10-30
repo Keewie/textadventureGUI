@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Levels>
+	<Level id="1" endLevel="false">
+		<IntroTexts>
+			<IntroText>Es ist 6 Uhr morgens.</IntroText>
+			<IntroText>Dein Kater Charlie weckt dich durch einen gezielten Sprung ins Gesicht.</IntroText>
+		</IntroTexts>
+		<Question>Wie gehst du vor?</Question>
+		<AnswerNextLevelPairs>
+			<Pair>
+				<Answer>Du packst die Nervensäge, wirfst sie in die Richtung, in der du sein Katzenkörbchen vermutest und versuchst noch 24 kurze Stündchen weiter zu schlafen.</Answer>
+				<NextLevelId>-1</NextLevelId>
+			</Pair>
+			<Pair>
+				<Answer>Du schiebst seine 7 Kilo liebevoll von deinem schmerzenden Gesicht und beschließt aufzustehen.</Answer>
+				<NextLevelId>2</NextLevelId>
+			</Pair>
+			<Pair>
+				<Answer>Du packst Charlie mit unter die Bettdecke und knuddelst ihn gegen seinen Willen, da er so dick ist kann er sich sowieso nicht wehren. </Answer>
+				<NextLevelId>-1</NextLevelId>
+			</Pair>
+			<Pair>
+				<Answer>Aus Wut über die unsanfte Weckaktion willst du Charlie eins auswischen und futterst sein Katzenfutter direkt vor seinen traurigen, großen Kulleraugen!Echt fies! Und extrem eklig ... </Answer>
+				<NextLevelId>-1</NextLevelId>
+			</Pair>
+		</AnswerNextLevelPairs>
+	</Level>
+	<Level id="2" endLevel="false">
+		<IntroTexts>
+			<IntroText>Du richtest dich auf, gähnst noch ein mal kräftig, und öffnest die Augen.</IntroText>
+			<IntroText>Du siehst die altbekannte Schwärze und beschliesst ins Bad zu schlendern.</IntroText>
+			<IntroText>Nachdem du dort sturzfrei und unverletzt und deshalb schon recht zufrieden und für den Tag hoch motiviert angekommen bist, beschliesst du die Zähne zu putzen.</IntroText>
+		</IntroTexts>
+		<Question>Wie stellst du das an?</Question>
+		<AnswerNextLevelPairs>
+			<Pair>
+				<Answer>Du schreist Charlie an, dass er dir gefälligst deine Zahnbürste bringen soll. Nachdem du seltsamerweise ignoriert wurdest, setzt du dich eingeschnappt im Flur auf den Boden, kneifst die Augen zusammen und schmollst, warum auch immer...</Answer>
+				<NextLevelId>-1</NextLevelId>
+			</Pair>
+			<Pair>
+				<Answer>Du tastest das Waschbecken stundenlang bis spät abends ab und gehst genervt wieder ins Bett wo du zufällig eine Packung Kaugummis findest auf der du herumkaust, bis du einpennst. </Answer>
+				<NextLevelId>-1</NextLevelId>
+			</Pair>
+			<Pair>
+				<Answer>Du tastest nach dem an der Wand befestigten Becherhalter und nimmst die Zahnbürste und die Zahnpasta-Tube aus dem Becher und schrubbst dir die Kauleiste bis sie glaenzt und blinkt..</Answer>
+				<NextLevelId>3</NextLevelId>
+			</Pair>
+		</AnswerNextLevelPairs>
+	</Level>
+	<Level id="3" endLevel="false">
+		<IntroTexts>
+			<IntroText>Mit frischem Atem und sauberen Zähnen machst du dich auf den Weg in die Küche.</IntroText>
+			<IntroText>Dort beschliesst du dir einen Kaffee zu machen, weil du voll Lust auf Kaffee hast und kein Nasenbluten davon bekommst.</IntroText>
+		</IntroTexts>
+		<Question>Was möchtest du jetzt tun?</Question>
+		<AnswerNextLevelPairs>
+			<Pair>
+				<Answer>Du schnappst dir ne Packung Kaugummis und überlegst, wie du das Problem angehen könntest</Answer>
+				<NextLevelId>-1</NextLevelId>
+			</Pair>
+			<Pair>
+				<Answer>Du gibst nach einigen Tastversuchen total genervt auf und beschliesst dir 4 Mentol-PIzzen für's Frustfressen zu bestellen und ne neue Zahnbürste für danach.</Answer>
+				<NextLevelId>-1</NextLevelId>
+			</Pair>
+			<Pair>
+				<Answer>Du erinnerst dich, dass die Kaffeemaschine am rechten Ende der Arbeitsplatte steht und schaltest sie ein, weil du gestern schon alles vorbereitet hast..</Answer>
+				<NextLevelId>4</NextLevelId>
+			</Pair>
+			<Pair>
+				<Answer>Du schmeisst dich auf den Boden und rollst dich schreiend und Kaugummi kauend im Flur hin und her bis dir jemand Kaffee bringt (Das könnte dauern)...</Answer>
+				<NextLevelId>-1</NextLevelId>
+			</Pair>
+		</AnswerNextLevelPairs>
+	</Level>
+	<Level id="4" endLevel="true">
+		<IntroTexts>
+			<IntroText>Der Kaffee ist so stark, dass du für den Rest des Tages wieder sehen kannst!!!</IntroText>
+			<IntroText>Cool oder??</IntroText>
+			<IntroText>Du hast scheinbar ein Mittel gegen Blindheit gefunden!</IntroText>
+			<IntroText>Gratulation!</IntroText>
+			<IntroText>Nebenbei hast du auch noch das Spiel gewonnen! Glanzleistung!!!</IntroText>
+			<IntroText>  hier bitte Happy End einfügen </IntroText>
+		</IntroTexts>
+	</Level>
+</Levels>
