@@ -1,0 +1,64 @@
+<project name="Alltag-eines-Blinden" default="dist" basedir=".">
+	
+	<description>
+		A build file that is able to build an executable jar file and automatically downloads 
+		and extracts the images required by the project.
+	</description>
+	
+	<!-- set global properties for this build -->
+	<property name="src" location="src" />
+	<property name="build" location="bin" />
+	<property name="dist" location="dist" />
+	<property name="images" value="Bilder Alltag" />
+
+	<target name="init">
+		<!-- Create the build directory structure used by compile -->
+		<mkdir dir="${build}" />
+		<mkdir dir="Bilder Alltag" />
+	</target>
+
+	<target name="compile" depends="init" description="compile the source ">
+		<!-- Compile the java code from ${src} into ${build} -->
+		<javac srcdir="${src}" destdir="${build}" />
+	</target>
+	
+	<target name="download-images" depends="init">
+		<!-- Get images -->
+		<get src="https://docs.google.com/a/cartago.com/uc?authuser=0&amp;id=0B91qvC_skEKJSjF2RW1oeTlJUDg&amp;export=download" dest="bilder.zip" />
+
+		<!-- Unzip images and delete the downloaded zip file -->
+		<unzip src="bilder.zip" dest="${images}">
+		    <!-- Ignore the directory structure in the zip file, just put all the 
+		    image files it contains anywhere into destination folder "images" -->
+			<mapper type="flatten"/>
+		</unzip>
+		<delete file="bilder.zip" />
+	</target>
+
+	<target name="dist" depends="compile" description="generate the distribution">
+		<!-- Create the distribution directory -->
+		<mkdir dir="${dist}" />
+		
+		<!-- Copy images to dist folder -->
+		<copy todir="${dist}/${images}">
+			<fileset dir="${images}" />
+		</copy>
+
+		<!-- Put everything in ${build} into the Alltag-eines-Blinden.jar file -->
+		<jar jarfile="${dist}/Alltag-eines-Blinden.jar" basedir="${build}">
+			<manifest>
+				<attribute name="Main-Class" value="StartFrame" />
+			</manifest>
+		</jar>
+
+		<!-- Delete images folder in dist folder -->
+		<delete dir="${dist}/${images}" />
+	</target>
+
+	<target name="clean" description="clean up">
+		<!-- Delete the ${build} and ${dist} directory trees -->
+		<delete dir="${build}" />
+		<delete dir="${dist}" />
+		<delete dir="${images}" />
+	</target>
+</project>

@@ -28,7 +28,7 @@ public class DOM
 		Element root = document.getDocumentElement(); // Wurzelelement holen "Levels"
 		NodeList levelNodes = root.getElementsByTagName("Level"); // Level holen aus "Levels" 
 		
-		if(levelNodes != null && levelNodes.getLength() > 0) // Pr¸fen ob levelNodes Elemente hat 
+		if(levelNodes != null && levelNodes.getLength() > 0) // Pr√ºfen ob levelNodes Elemente hat 
 		{
 			for(int i = 0; i < levelNodes.getLength(); i++) 
 			{
@@ -96,23 +96,23 @@ public class DOM
 				}
 				
 				
-				//Zusammenf¸gen des Levels____________________________________________
+				//Zusammenf√ºgen des Levels____________________________________________
 				Level level = new Level(id, introTexts, question, endLevel, null);
-				if(!endLevel) // Pr¸fen ob KEIN EndLvl
+				if(!endLevel) // Pr√ºfen ob KEIN EndLvl
 				{
 					for(int j = 0; j < answers.size(); j++)
 					{
-						level.addAnswerAndNextLevelPair(answers.get(j), nextLevelIds.get(j)); // hier Paarweise dem Lvl hinzuf¸gen (je nachdem wie viele Antworten) 
+						level.addAnswerAndNextLevelPair(answers.get(j), nextLevelIds.get(j)); // hier Paarweise dem Lvl hinzuf√ºgen (je nachdem wie viele Antworten) 
 					}
 				}
 				
-				levels.add(level); //level zur Levelliste hinzuf¸gen
+				levels.add(level); //level zur Levelliste hinzuf√ºgen
 				
 		
 			}
 		}
 		
-		return levels; // <-- Gibt Liste der Levels zur¸ck 
+		return levels; // <-- Gibt Liste der Levels zur√ºck 
 		
 	}
 	

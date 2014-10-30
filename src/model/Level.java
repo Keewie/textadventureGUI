@@ -24,52 +24,52 @@ public class Level
 		this.introTexts = introTexts;	// IntroTxts! (Als String List) 
 		this.question = question;	// Die Fragen
 		this.endLevel = endLevel;	// boolean Abfrage ob Endlvl 
-		this.imagePath = imgPath; 	// Das zum Level dazugehörige Lvl Bild 
+		this.imagePath = imgPath; 	// Das zum Level dazugehÃ¶rige Lvl Bild 
 	}
 
 	
 	public int getId() 
 	{
-		return id; // <-- gibt Id zurück 
+		return id; // <-- gibt Id zurÃ¼ck 
 	}
 
 	public boolean isEndLevel() 
 	{
-		return endLevel; // <-- gibt die Endlevel boolean Abfrage zurück 
+		return endLevel; // <-- gibt die Endlevel boolean Abfrage zurÃ¼ck 
 	}
 
 	public List<String> getIntroTexts() 
 	{
-		return introTexts; // <-- gibt die Intro- GameTexte zurück 
+		return introTexts; // <-- gibt die Intro- GameTexte zurÃ¼ck 
 	}
 
 	public String getQuestion() 
 	{
-		return question; // <-- gibt Die Fragen zurück 
+		return question; // <-- gibt Die Fragen zurÃ¼ck 
 	}
 
 	public List<String> getAnswers() 
 	{
-		return answers; // <-- gibt Antworten zurück (Bekommt die Antworten aus dem Antwort-ID-Pärchen) 
+		return answers; // <-- gibt Antworten zurÃ¼ck (Bekommt die Antworten aus dem Antwort-ID-PÃ¤rchen) 
 	}
 
 	public List<Integer> getNextLevelIds() 
 	{
-		return nextLevelIds; // <-- gibt Id für nächsten Level zurück (ArrayList) (Bekommt die IDs aus dem Antwort-ID-Pärchen) 
+		return nextLevelIds; // <-- gibt Id fÃ¼r nÃ¤chsten Level zurÃ¼ck (ArrayList) (Bekommt die IDs aus dem Antwort-ID-PÃ¤rchen) 
 	}
 	
 	public String getImagePath() 
 	{
-		return imagePath;  // <-- gibt den Pfad des Pics zurück (Als String) 
+		return imagePath;  // <-- gibt den Pfad des Pics zurÃ¼ck (Als String) 
 	}
 
 	
-// Das "Antwort - ID - Pärchen"_______________________________________________________________________________________________________________________________
+// Das "Antwort - ID - PÃ¤rchen"_______________________________________________________________________________________________________________________________
 	
-	public void addAnswerAndNextLevelPair(String answer, int nextLevelId) //Antwort-ID-Pärchen: (String = Antwort selbst) & (int = die nächste Level ID) 
+	public void addAnswerAndNextLevelPair(String answer, int nextLevelId) //Antwort-ID-PÃ¤rchen: (String = Antwort selbst) & (int = die nÃ¤chste Level ID) 
 	{
-		answers.add(answer); // Gibt Antworten an das Antwort-ID-Pärchen 
-		nextLevelIds.add(nextLevelId); // Gibt die ID des nächsten Lvls an das Antwort-ID-Pärchen 
+		answers.add(answer); // Gibt Antworten an das Antwort-ID-PÃ¤rchen 
+		nextLevelIds.add(nextLevelId); // Gibt die ID des nÃ¤chsten Lvls an das Antwort-ID-PÃ¤rchen 
 	}	
 }
 

@@ -25,8 +25,8 @@ public class SAXLevelParser extends DefaultHandler
 	private String question; // Die Fragen im Spiel 
 	private boolean endLevel; // Abfrage nach dach dem EndLvl (ob es das EndLvl ist) 
 	private String imgPath; //Der Pic - Pfad 
-	private String answer; // Die möglichen Antworten im Spiel 
-	private int nextLevelId; // Die Id des nächsten Lvls (Teil des Lvl-ID-Pärchens) 
+	private String answer; // Die mÃ¶glichen Antworten im Spiel 
+	private int nextLevelId; // Die Id des nÃ¤chsten Lvls (Teil des Lvl-ID-PÃ¤rchens) 
 	private String tempValue; // Der derzeitige Wert 
 
 	public List<Level> parse(File file) 

@@ -27,15 +27,15 @@ public class StartFrame extends JFrame
 	 * 
 	 */
 	private static final long serialVersionUID = -3123684149704907948L;
-	JLabel label; // Das Label f�r das Startbild
+	JLabel label; // Das Label für das Startbild
 	JLabel welcome; // Willkommen -Text
 	JLabel nameOfGame; // Alltag eines Blinden -Text
-	ImageIcon startPic; // Bild f�r das Startfenster
+	ImageIcon startPic; // Bild für das Startfenster
 	JButton bStart; // Der Startbutton
-	Font fontWelcome; // schriftstil f�r willkommen
-	Font fontNameOfGame; // schriftstil f�r spielname
+	Font fontWelcome; // schriftstil für willkommen
+	Font fontNameOfGame; // schriftstil für spielname
 
-	public StartFrame() // Der Konstruktor f�r JFrame
+	public StartFrame() // Der Konstruktor für JFrame
 	
 	{
 
@@ -68,18 +68,18 @@ public class StartFrame extends JFrame
 		bStart.setBounds(790, 590, 300, 130);
 		label.add(bStart);
 
-		fontWelcome = new Font("Gentium Basic", Font.ITALIC + Font.BOLD, 85); // Font f�r Willkommen
-		fontNameOfGame = new Font("Gentium Basic", Font.ITALIC, 60); // Font f�r Gamenamen
+		fontWelcome = new Font("Gentium Basic", Font.ITALIC + Font.BOLD, 85); // Font für Willkommen
+		fontNameOfGame = new Font("Gentium Basic", Font.ITALIC, 60); // Font für Gamenamen
 																		
 
-		// Label f�r den Willkommen-Schriftzug
+		// Label für den Willkommen-Schriftzug
 		welcome = new JLabel("Willkommen!");
 		welcome.setBounds(730, 250, 800, 300);
 		welcome.setFont(fontWelcome);
 		welcome.setForeground(Color.WHITE);
 		label.add(welcome);
 
-		// Label f�r den Gamename-Schriftzug
+		// Label für den Gamename-Schriftzug
 		nameOfGame = new JLabel("- Der Alltag eines Blinden -");
 		nameOfGame.setBounds(660, 40, 900, 300);
 		nameOfGame.setFont(fontNameOfGame);

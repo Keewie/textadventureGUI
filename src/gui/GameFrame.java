@@ -36,30 +36,30 @@ public class GameFrame extends JFrame
 		JButton bSax; 
 		JButton bJaxb; 
 	
-		Font fontGameText = new Font("Arial", Font.ITALIC, 23); //Die Schrift f�r den Spieltext
-		Font fontUserArea = new Font("Arial", Font.PLAIN, 18);	//Die Schrift f�r den Userbereich
+		Font fontGameText = new Font("Arial", Font.ITALIC, 23); //Die Schrift für den Spieltext
+		Font fontUserArea = new Font("Arial", Font.PLAIN, 18);	//Die Schrift für den Userbereich
 		
-		JLabel picLabel; //Label f�r den Hintergrund
-		JLabel gamePicLabel; //Label f�r das Bild des Spiels
+		JLabel picLabel; //Label für den Hintergrund
+		JLabel gamePicLabel; //Label für das Bild des Spiels
 		JLabel gameTextLabel; //Der Text des Spiels
 		JLabel userAreaTxt; //Der Text auf der UserArea 
 		
-		ImageIcon bgPic; //Pic f�r den Hintergrund
+		ImageIcon bgPic; //Pic für den Hintergrund
 		ImageIcon startGamePic; 
 		
-		JTextArea answersArea; //Die Antwortoptionen f�r den User
+		JTextArea answersArea; //Die Antwortoptionen für den User
 		JTextArea userArea; //Die Textarea des Users
-		JTextArea gameTextArea; //Textarea f�r den Gametext
-		JTextArea questionsArea; //Textarea f�r die Fragen unter dem Gametext
+		JTextArea gameTextArea; //Textarea für den Gametext
+		JTextArea questionsArea; //Textarea für die Fragen unter dem Gametext
 		
 		JButton bNext; //Button zum "weiter" schalten, falls keine Frage gestellt wird, sondern nur Lesetext
 		
-		Dimension size = Toolkit.getDefaultToolkit().getScreenSize(); //Zum rausfinden der Screengr��e um das Frame anzupassen 
+		Dimension size = Toolkit.getDefaultToolkit().getScreenSize(); //Zum rausfinden der Screengröße um das Frame anzupassen 
 		
-		int levelCounter = 0; //Counter zum hochz�hlen der Lvls
-		int introTextCounter = 0; //Counter zum hochz�hlen der SpielTexte, also den IntroTexten
+		int levelCounter = 0; //Counter zum hochzählen der Lvls
+		int introTextCounter = 0; //Counter zum hochzählen der SpielTexte, also den IntroTexten
 		
-		private List<Level> levels; //LevelInitializer (fr�her GameContent, passt aber nicht mehr ganz) 
+		private List<Level> levels; //LevelInitializer (früher GameContent, passt aber nicht mehr ganz) 
 		Level currentLevel;
 		
 		
@@ -255,7 +255,7 @@ public class GameFrame extends JFrame
 			{
 				if(buttonText.equals("DOM"))
 				{
-					levels = XmlLevelInitializer.init();  //<--- hier ge�ndert!! (XML)
+					levels = XmlLevelInitializer.init();  //<--- hier geändert!! (XML)
 				}
 				
 				else if(buttonText.equals("SAX"))

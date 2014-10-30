@@ -16,7 +16,7 @@ import javax.swing.JTextArea;
 public class WrongFrame
 {	
 	
-	Font wFont = new Font("Arial", Font.ITALIC, 32); //Die Schrift f¸r den "Falsch - Text"
+	Font wFont = new Font("Arial", Font.ITALIC, 32); //Die Schrift f√ºr den "Falsch - Text"
 	HashMap<Integer, String> wHm= new HashMap<Integer, String>(); 
 	JTextArea wrongTxtArea; 
 	ImageIcon wFramePic; 
@@ -58,8 +58,8 @@ public class WrongFrame
 		wrongLabel.add(wrongTxtArea); 
 	
 		
-//Der schlieﬂen - Button	
-		bClose = new JButton("Ok, bitte schlieﬂen"); 
+//Der schlie√üen - Button	
+		bClose = new JButton("Ok, bitte schlie√üen"); 
 		bClose.setSize(180, 50); 
 		bClose.setLocation(170, 180); 
 		bClose.setIcon(new ImageIcon(
@@ -84,7 +84,7 @@ public class WrongFrame
 		wHm.put(4, wTxt4.wContent);
 
 	
-//Zuf‰llige Textauswahl________________________________________________
+//Zuf√§llige Textauswahl________________________________________________
 		random = new Random(); 
 		wCounter = random.nextInt(4)+1; 
 	
