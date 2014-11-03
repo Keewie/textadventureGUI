@@ -20,6 +20,8 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextArea;
 
+import jaxbPackage.LevelsJAXB;
+
 import org.xml.sax.SAXException;
 
 import model.Level;
@@ -39,7 +41,7 @@ public class GameFrame extends JFrame
 		Font fontGameText = new Font("Arial", Font.ITALIC, 23); //Die Schrift für den Spieltext
 		Font fontUserArea = new Font("Arial", Font.PLAIN, 18);	//Die Schrift für den Userbereich
 		
-		JLabel picLabel; //Label für den Hintergrund
+		JLabel picLabel; //Label f�r den Hintergrund
 		JLabel gamePicLabel; //Label für das Bild des Spiels
 		JLabel gameTextLabel; //Der Text des Spiels
 		JLabel userAreaTxt; //Der Text auf der UserArea 
@@ -265,7 +267,7 @@ public class GameFrame extends JFrame
 				
 				else if(buttonText.equals("JAXB"))
 				{
-					// TODO: Kommt noch...
+					levels = LevelsJAXB.getLevels();
 				}
 			}  catch (IOException e1) {
 				// TODO Auto-generated catch block

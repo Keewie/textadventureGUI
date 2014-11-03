@@ -2,6 +2,7 @@ package model;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import javax.swing.ImageIcon;
 import javax.swing.Icon;
 
@@ -71,6 +72,33 @@ public class Level
 		answers.add(answer); // Gibt Antworten an das Antwort-ID-Pärchen 
 		nextLevelIds.add(nextLevelId); // Gibt die ID des nächsten Lvls an das Antwort-ID-Pärchen 
 	}	
+	
+	@Override
+	public String toString() 
+	{
+		String pairs = "";
+		for(int i = 0; i <answers.size(); i++)
+		{
+			pairs += "pair " + (i+1) +"[answer=" + answers.get(i) + ", nextLevelId=" + nextLevelIds.get(i) + "]";
+			
+			// Groesse  i: 0           1           2
+			// 3           0 < 3-1 ja  1 < 3-1 ja  2 < 3-1 nein
+			if(answers.size()>1 && i<answers.size()-1)
+			{
+				pairs += ","; 
+			//	pairs = pairs + ";";  (Das gleiche wie eins dr�ber) 
+			}
+		}
+		
+		
+		return "Level [id=" + id 
+				+ ", introTexts=" + introTexts
+				+ ", question=" + question  
+				+ ", endLevel=" + endLevel 
+				+ ", imgPath=" + imagePath 
+				+ ", pairs=" + pairs 
+				+ "]";
+	}
 }
 
  
