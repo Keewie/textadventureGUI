@@ -1,0 +1,38 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Levels">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Level" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IntroTexts">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="IntroText" maxOccurs="unbounded" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="Question" minOccurs="0"/>
+              <xs:element name="AnswerNextLevelPairs" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Pair" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="Answer"/>
+                          <xs:element type="xs:byte" name="NextLevelId"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:byte" name="id" use="optional"/>
+            <xs:attribute type="xs:string" name="endLevel" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -37,6 +37,7 @@ public class GameFrame extends JFrame
 		JButton bDom; 
 		JButton bSax; 
 		JButton bJaxb; 
+		JButton bXsd; 
 	
 		Font fontGameText = new Font("Arial", Font.ITALIC, 23); //Die Schrift für den Spieltext
 		Font fontUserArea = new Font("Arial", Font.PLAIN, 18);	//Die Schrift für den Userbereich
@@ -160,14 +161,19 @@ public class GameFrame extends JFrame
 		picLabel.add(bDom); 
 		
 		bSax = new JButton("SAX"); 
-		bSax.setBounds(210, 10, 80, 50);
+		bSax.setBounds(110, 10, 80, 50);
 		bSax.addActionListener(new XMLInputButtonListener());
 		picLabel.add(bSax); 
 		
 		bJaxb = new JButton("JAXB"); 
-		bJaxb.setBounds(310, 10, 80, 50);
+		bJaxb.setBounds(210, 10, 80, 50);
 		bJaxb.addActionListener(new XMLInputButtonListener());
 		picLabel.add(bJaxb); 
+		
+		bXsd = new JButton("JAXB XSD"); 
+		bXsd.setBounds(310, 10, 80, 50);
+		bXsd.addActionListener(new XMLInputButtonListener());
+		picLabel.add(bXsd); 
 		
 		
 //................................................................................................	
@@ -269,6 +275,12 @@ public class GameFrame extends JFrame
 				{
 					levels = LevelsJAXB.getLevels();
 				}
+				
+				else if(buttonText.equals("JAXB XSD"))
+				{
+					levels = LevelsJAXB.getLevelsFromXSDGeneratedClasses();
+				}
+				
 			}  catch (IOException e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
